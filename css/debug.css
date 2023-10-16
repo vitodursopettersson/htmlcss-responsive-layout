@@ -31,3 +31,13 @@ Debug
     height: 345px;
     border: 1px solid red;
 }
+
+/* Strategic Planning */
+
+.column {
+    height: 724px;
+}
+
+.column-group :first-child {
+    background-color: rgb(190, 190, 190);
+}

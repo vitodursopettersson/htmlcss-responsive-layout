@@ -34,9 +34,27 @@ Common
 **************
 */
 
+
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+.column-group {
+    display: flex;
+}
+
+.column {
+    width: 50%;
+}
+
+.column--small {
+    width: 40%;
+}
+
+.column--big {
+    width: 60%;
 }
 
 /* 
@@ -67,6 +85,14 @@ Main
 --------------
 */
 
+/* Section */
+
+section {}
+
+.section--alt {
+    background-color: var(--main-color);
+}
+
 /* Common Card Layout*/
 
 .card--group {
@@ -93,7 +119,7 @@ Main
     background-color: var(--snd-alt-color);
 }
 
-
+/* Strategic Planning */
 
 
 
@@ -110,6 +136,14 @@ Responsive
     /* Common */
     .container {
         margin: 0px 30px;
+    }
+
+    .column-group {
+        flex-wrap: wrap;
+    }
+
+    .column {
+        width: 100%;
     }
 
     /* Header */
