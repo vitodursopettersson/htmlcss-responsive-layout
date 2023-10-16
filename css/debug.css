@@ -24,3 +24,10 @@ Debug
     background-color: green;
     height: 100%;
 }
+
+/* Above */
+
+.above .card {
+    height: 345px;
+    border: 1px solid red;
+}
