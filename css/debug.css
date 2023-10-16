@@ -1,0 +1,26 @@
+/* 
+++++++++++++++
+Debug
+++++++++++++++
+*/
+
+/* Header */
+
+.debug header {
+    height: 76px;
+}
+
+.debug .container {
+    background-color: #D9D9D9;
+    height: 100%;
+}
+
+.debug .brand {
+    background-color: red;
+    height: 100%;
+}
+
+.debug nav {
+    background-color: green;
+    height: 100%;
+}

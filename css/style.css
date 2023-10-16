@@ -1,7 +1,71 @@
 /* 
+++++++++++++++
+Debug
+++++++++++++++
+*/
+
+@import url(debug.css);
+
+/* 
 **************
 Reset default 
 **************
 */
 
 @import url(reset.css);
+
+/* 
+**************
+Design System
+**************
+*/
+
+/* Color */
+
+:root {
+    --nav-color: #0184FD;
+}
+
+/* 
+**************
+Common
+**************
+*/
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* 
+--------------
+Header
+--------------
+*/
+
+header {
+    background-color: var(--nav-color);
+}
+
+header .container {
+    display: flex;
+}
+
+.brand {
+    width: 50%;
+}
+
+nav {
+    width: 50%;
+}
+
+/* Tablet - da 0 a 991px */
+@media screen and (max-width: 991px) {
+
+    header .container {
+        padding: 0 30px;
+    }
+}
+
+/* Mobile - da 0 a 767 px */
+@media screen and (max-width: 767px) {}
