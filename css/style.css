@@ -26,6 +26,7 @@ Design System
     --main-color: #9792E4;
     --snd-color: #0184FD;
     --snd-alt-color: #B5DCFF;
+    --footer-color: #333333;
 }
 
 /* 
@@ -39,6 +40,11 @@ Common
     margin: 0 auto;
 }
 
+.container--small {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
 .column-group {
     display: flex;
 }
@@ -48,11 +54,11 @@ Common
 }
 
 .column--small {
-    width: 40%;
+    width: 30%;
 }
 
 .column--big {
-    width: 60%;
+    width: 70%;
 }
 
 /* 
@@ -149,6 +155,22 @@ section {}
     width: calc((100% - 64px) /3)
 }
 
+/* About us */
+
+.about-us {
+    padding: 100px 0 150px 0;
+}
+
+/* 
+--------------
+Footer
+--------------
+*/
+
+footer {
+    background-color: var(--footer-color);
+}
+
 /* 
 ++++++++++++++
 Responsive
@@ -195,5 +217,11 @@ Responsive
     /* Benefits */
     .benefits .card {
         width: 100%
+    }
+
+    /* About us */
+    .about-us .column--big,
+    .about-us .column--small {
+        width: 100%;
     }
 }

@@ -6,28 +6,28 @@ Debug
 
 /* Header */
 
-.debug header {
+header {
     height: 76px;
 }
 
-.debug .container {
+.container {
     background-color: #D9D9D9;
     height: 100%;
 }
 
-.debug .brand {
+.brand {
     background-color: red;
     height: 100%;
 }
 
-.debug nav {
+nav {
     background-color: green;
     height: 100%;
 }
 
 /* Above */
 
-.above .card {
+.card {
     height: 345px;
     border: 1px solid red;
 }
@@ -58,4 +58,25 @@ Debug
 .benefits .card {
     height: 422px;
     border: 1px solid red;
+}
+
+/* About Us */
+
+.column--small,
+.column--big {
+    height: 640px;
+}
+
+/* Get Started */
+
+.get-started__text-group {
+    height: 500px;
+    background-color: #D9D9D9;
+}
+
+/* Footer */
+
+.footer__text-group {
+    height: 150px;
+    background-color: black;
 }
