@@ -52,3 +52,10 @@ Debug
 .testimonial {
     height: 276px;
 }
+
+/* Benefits */
+
+.benefits .card {
+    height: 422px;
+    border: 1px solid red;
+}
