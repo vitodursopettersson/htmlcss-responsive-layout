@@ -34,8 +34,6 @@ Common
 **************
 */
 
-
-
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -93,21 +91,6 @@ section {}
     background-color: var(--main-color);
 }
 
-/* Common Card Layout*/
-
-.card--group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px
-}
-
-.card {
-    width: calc((100% - 48px) /3)
-}
-
-.card--group .card:first-child {
-    width: calc(((100% - 48px) /3) *2 + 24px)
-}
 
 /* Above */
 
@@ -119,9 +102,32 @@ section {}
     background-color: var(--snd-alt-color);
 }
 
+.above .card--group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px
+}
+
+.above .card {
+    width: calc((100% - 48px) /3)
+}
+
+.above .card--group .card:first-child {
+    width: calc(((100% - 48px) /3) *2 + 24px)
+}
+
 /* Strategic Planning */
 
+/* Testimonials */
 
+.title--testimonial {
+    margin-bottom: 32px;
+}
+
+.testimonial {
+    background-color: var(--main-color);
+    margin-bottom: 32px;
+}
 
 
 /* 
@@ -157,8 +163,8 @@ Responsive
 @media screen and (max-width: 767px) {
 
     /* Above */
-    .card,
-    .card--group .card:first-child {
+    .above .card,
+    .above .card--group .card:first-child {
         width: 100%
     }
 
