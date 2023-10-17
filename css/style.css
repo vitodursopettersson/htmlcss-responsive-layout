@@ -54,7 +54,11 @@ h5 {}
 
 h6 {}
 
-p {}
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 170%;
+}
 
 span {}
 
@@ -246,6 +250,57 @@ section {}
 
 /* Strategic Planning */
 
+#planning {
+    padding: 134px 0 64px 0;
+    color: #ffffff;
+}
+
+#planning .container {
+    padding: 0 100px;
+}
+
+#planning .column {
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#planning img {
+    margin-bottom: 140px;
+}
+
+#planning h2 {
+    margin-bottom: 52px;
+}
+
+#planning .card {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 32px 40px;
+    border-radius: 50px;
+}
+
+#planning .card img {
+    width: 75%;
+    margin: 0 auto 20px;
+}
+
+#planning .icon--arrow {
+    background-color: var(--main-color);
+    display: inline-block;
+    padding: 14px;
+    border-radius: 50%;
+    margin-top: 32px;
+}
+
+#planning .icon--arrow i {
+    font-size: 16px;
+    width: 20px;
+    height: 20px;
+}
+
 /* Testimonials */
 
 .title--testimonial {
@@ -336,6 +391,21 @@ Responsive
     .above .card.column-group .column:last-child {
         justify-content: flex-start;
     }
+
+    /* Strategic Planning */
+
+    #planning .container {
+        padding: 0;
+    }
+
+    #planning .column {
+        margin: 0 32px;
+    }
+
+    #planning .card {
+        margin-top: 36px;
+    }
+
 
     /* Benefits */
     .benefits .card {
