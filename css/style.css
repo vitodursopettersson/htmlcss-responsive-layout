@@ -29,6 +29,69 @@ Design System
     --footer-color: #333333;
 }
 
+/* Tipography */
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+p {}
+
+span {}
+
+nav a {
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+a {}
+
+/* Button */
+
+button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 22px;
+    font-size: 14px;
+}
+
+button#app-store {
+    background-color: var(--snd-color);
+    padding: 10px 50px;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+button#app-store i {
+    font-size: 18px;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-right: 8px;
+    color: #ffffff;
+}
+
 /* 
 **************
 Common
@@ -38,6 +101,7 @@ Common
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    padding: 0 5px;
 }
 
 .container--small {
@@ -77,10 +141,35 @@ header .container {
 
 .brand {
     width: 50%;
+    display: flex;
+    align-items: center;
 }
 
 nav {
     width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0;
+    color: #ffffff;
+}
+
+.brand {
+    margin-top: 7px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav__menu--mobile {
+    display: none;
+}
+
+nav i {
+    font-size: 20px;
 }
 
 /* 
@@ -115,12 +204,45 @@ section {}
 }
 
 .above .card {
-    width: calc((100% - 48px) /3)
+    width: calc((100% - 48px) /3);
+    text-align: center;
+    padding: 30px 24px;
+    border-radius: 20px;
 }
 
 .above .card--group .card:first-child {
-    width: calc(((100% - 48px) /3) *2 + 24px)
+    width: calc(((100% - 48px) /3) *2 + 24px);
+    text-align: left;
 }
+
+.above .card i {
+    font-size: 80px;
+    color: var(--snd-color);
+    margin-bottom: 22px;
+}
+
+.above .card h3 {
+    color: var(--snd-color);
+}
+
+.above .card p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 180%;
+    color: #5A6E7F;
+}
+
+.above .card img {
+    width: 75%;
+    margin-bottom: -30px;
+}
+
+.above .card.column-group .column:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 
 /* Strategic Planning */
 
@@ -137,27 +259,27 @@ section {}
 
 /* Benefits */
 
-.benefits {
+#benefits {
     background-color: var(--main-color);
 }
 
-.benefits .card {
+#benefits .card {
     background-color: #ffffff;
 }
 
-.benefits .card--group {
+#benefits .card--group {
     display: flex;
     flex-wrap: wrap;
     gap: 32px
 }
 
-.benefits .card {
+#benefits .card {
     width: calc((100% - 64px) /3)
 }
 
 /* About us */
 
-.about-us {
+#about-us {
     padding: 100px 0 150px 0;
 }
 
@@ -180,9 +302,20 @@ Responsive
 /* Tablet - da 0 a 991px */
 @media screen and (max-width: 991px) {
 
-    /* Common */
+    /* Container */
+
     .container {
-        margin: 0px 30px;
+        padding: 0 32px;
+    }
+
+    /* Nav */
+
+    .nav__menu {
+        display: none;
+    }
+
+    .nav__menu--mobile {
+        display: block;
     }
 
     .column-group {
@@ -193,9 +326,15 @@ Responsive
         width: 100%;
     }
 
-    /* Header */
-    header .container {
-        padding: 0 30px;
+    /* Above */
+
+    .above .card img {
+        width: 50%;
+        margin-top: 40px;
+    }
+
+    .above .card.column-group .column:last-child {
+        justify-content: flex-start;
     }
 
     /* Benefits */
@@ -212,6 +351,14 @@ Responsive
     .above .card,
     .above .card--group .card:first-child {
         width: 100%
+    }
+
+    .above .card img {
+        width: 100%;
+    }
+
+    .above .card.column-group .column:last-child {
+        justify-content: center;
     }
 
     /* Benefits */

@@ -13,20 +13,57 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Link Font PT Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Link Css -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body class="debug">
+<body class="">
 
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="brand">
 
+            <!-- Brand -->
+            <div class="brand">
+                <a href="#">
+                    <img src="img/logo.png" alt="logo">
+                </a>
             </div>
+
+            <!-- Nav -->
             <nav>
+
+                <ul class="nav__menu">
+
+                    <!-- Menu -->
+                    <li>
+                        <a href="#planning">Planning</a>
+                    </li>
+                    <li>
+                        <a href="#testimonials">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a href="#about-us">About Us</a>
+                    </li>
+
+                    <!-- Cta -->
+                    <button>Get Started</button>
+
+                </ul>
+
+                <!-- Burger Menu -->
+                <div class="nav__menu--mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
 
             </nav>
         </div>
@@ -38,28 +75,67 @@
         <!-- Above -->
         <section class="above">
             <div class="container">
+
+                <!-- Gruppo Card -->
                 <div class="card--group">
-                    <div class="card">
 
+                    <!-- Get a demo application -->
+                    <div class="card column-group">
+                        <div class="column">
+                            <h3>Get a demo application</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad
+                                dolore quod, facere totam quas
+                                recusandae blanditiis.</p>
+                            <button id="app-store"><i class="fa-brands fa-apple"></i>App Store</button>
+                        </div>
+                        <div class="column">
+                            <img src="img/phone.png" alt="app interface">
+                        </div>
                     </div>
-                    <div class="card">
 
-                    </div>
+                    <!-- Clean Small -->
                     <div class="card">
-
+                        <i class="fa-solid fa-file-code"></i>
+                        <h3>Clean Code</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore
+                            quod, facere totam quas
+                            recusandae blanditiis.</p>
                     </div>
+
+                    <!-- Web design -->
                     <div class="card">
-
+                        <i class="fa-solid fa-compass-drafting"></i>
+                        <h3>Web design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore
+                            quod, facere totam quas
+                            recusandae blanditiis.</p>
                     </div>
+
+                    <!-- Development -->
                     <div class="card">
-
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore
+                            quod, facere totam quas
+                            recusandae blanditiis.</p>
                     </div>
+
+                    <!-- Branding -->
+                    <div class="card">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore
+                            quod, facere totam quas
+                            recusandae blanditiis.</p>
+                    </div>
+
+
                 </div>
             </div>
         </section>
 
         <!-- Strategic Planning -->
-        <section class="section--alt">
+        <section class="section--alt" id="planning">
             <div class="container column-group">
                 <div class="column">
 
@@ -71,7 +147,7 @@
         </section>
 
         <!-- Testimonials -->
-        <section>
+        <section id="testimonials">
             <div class="container">
                 <div class="title--testimonial">
 
@@ -88,7 +164,7 @@
         </section>
 
         <!-- Benefits -->
-        <section class="benefits">
+        <section id="benefits">
             <div class="container">
                 <div class="card--group">
                     <div class="card">
@@ -108,7 +184,7 @@
         </section>
 
         <!-- About Us -->
-        <section class="about-us">
+        <section id="about-us">
 
             <div class="container column-group">
 
