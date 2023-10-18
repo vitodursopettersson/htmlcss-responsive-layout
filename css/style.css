@@ -37,6 +37,7 @@ body {
 
 h1 {
     font-size: 48px;
+    color: var(--main-color);
 }
 
 h2 {
@@ -52,7 +53,11 @@ h4 {}
 
 h5 {}
 
-h6 {}
+h6 {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
 
 p {
     font-size: 16px;
@@ -184,12 +189,13 @@ Main
 
 /* Section */
 
-section {}
-
 .section--alt {
     background-color: var(--main-color);
 }
 
+.section--alt h1 {
+    color: #ffffff;
+}
 
 /* Above */
 
@@ -303,13 +309,68 @@ section {}
 
 /* Testimonials */
 
-.title--testimonial {
-    margin-bottom: 32px;
+#testimonials {
+    padding: 64px 0 112px;
+}
+
+.title--testimonials {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 32px;
+}
+
+.title--testimonials h1 {
+    margin-bottom: 40px;
 }
 
 .testimonial {
     background-color: var(--main-color);
     margin-bottom: 32px;
+    padding: 32px 70px 32px 16px;
+    border-radius: 50px;
+}
+
+.testimonial .column--small {
+    width: 25%;
+}
+
+.testimonial .column--big {
+    width: 75%;
+}
+
+.testimonial__img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial__info {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial__info q {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.testimonial__info q:before {
+    font-size: 60px;
+    line-height: 0px;
+    position: relative;
+    top: 30px;
+    margin-right: 5px;
+}
+
+.testimonial__info q:after {
+    font-size: 60px;
+    line-height: 0px;
+    position: relative;
+    top: 30px;
+    margin-left: 5px;
 }
 
 /* Benefits */
