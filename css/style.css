@@ -534,6 +534,27 @@ Footer
 
 footer {
     background-color: var(--footer-color);
+    padding: 40px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer .container--small {
+    padding: 0 5%;
+}
+
+footer p {
+    margin-bottom: 66px;
+    font-size: 14px;
+}
+
+footer span {
+    font-size: 14px;
+}
+
+footer a {
+    color: var(--main-color);
+    text-decoration: underline;
 }
 
 /* 
@@ -678,5 +699,7 @@ Responsive
     #get-started h1 {
         font-size: 70px;
     }
+
+
 
 }
