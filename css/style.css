@@ -384,11 +384,9 @@ Main
 #benefits h2 {
     color: #ffffff;
     text-align: center;
+    margin-bottom: 60px;
 }
 
-#benefits .card {
-    background-color: #ffffff;
-}
 
 #benefits .card--group {
     display: flex;
@@ -397,7 +395,33 @@ Main
 }
 
 #benefits .card {
-    width: calc((100% - 64px) /3)
+    width: calc((100% - 64px) /3);
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 20px;
+}
+
+#benefits .card__content .card__content__title h2 {
+    color: var(--main-color);
+    font-size: 74px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+#benefits .card__content .card__content__title h3 {
+    color: var(--main-color);
+}
+
+#benefits .card__content .card__content__content p {
+    color: #333333;
+    margin-bottom: 28px;
+}
+
+#benefits .card__content .card__content__content button {
+    background-color: var(--main-color);
+    color: #ffffff;
+    letter-spacing: 3px;
+    padding: 12px 48px;
 }
 
 /* About us */
@@ -481,7 +505,8 @@ Responsive
     }
 
     /* Benefits */
-    .benefits .card {
+
+    #benefits .card {
         width: calc((100% - 32px) /2)
     }
 
@@ -520,7 +545,7 @@ Responsive
     }
 
     /* Benefits */
-    .benefits .card {
+    #benefits .card {
         width: 100%
     }
 
