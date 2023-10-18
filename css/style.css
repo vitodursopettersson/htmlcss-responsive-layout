@@ -124,7 +124,7 @@ Common
 }
 
 .container--small {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -387,7 +387,6 @@ Main
 /* Benefits */
 
 #benefits {
-    background-color: var(--main-color);
     padding: 78px 0 66px;
 }
 
@@ -479,6 +478,53 @@ Main
 
 #about-us .text-group {}
 
+/* Get Started */
+
+#get-started {
+    padding: 66px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+#get-started h6 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2.16px;
+    margin-bottom: 36px;
+}
+
+#get-started h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#get-started h1 {
+    font-size: 96px;
+    color: #FBC15F;
+    margin-bottom: 20px;
+}
+
+#get-started p {
+    padding: 0 10%;
+}
+
+#get-started button {
+    margin: 36px 0;
+    padding: 25px 68px;
+    border-radius: 40px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--main-color);
+}
+
+#get-started span {
+    display: block;
+}
+
+#get-started span a {
+    color: #ffffff;
+    text-decoration: underline;
+}
 
 /* 
 --------------
@@ -622,4 +668,15 @@ Responsive
         height: 180px;
         margin-top: 55px;
     }
+
+    /* Get Started */
+
+    #get-started h2 {
+        font-size: 30px;
+    }
+
+    #get-started h1 {
+        font-size: 70px;
+    }
+
 }
